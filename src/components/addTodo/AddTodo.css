@@ -1,0 +1,11 @@
+.addTodo {
+    padding: 20px;
+}
+
+.addTodo input {
+    width: 70%;
+}
+
+.addTodo button {
+    width: 30%;
+}

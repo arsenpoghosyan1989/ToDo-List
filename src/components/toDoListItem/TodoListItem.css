@@ -1,0 +1,19 @@
+.todoListItem {
+    padding: 0 20px;
+    font-size: 40px;
+}
+
+.todoListItem .btn {
+    width: 32px;
+    padding: 5px 0px;
+    margin: 0 1px;
+}
+
+.todoListItem .done {
+    text-decoration: line-through;
+}
+
+.todoListItem .importantTodo {
+    font-weight: 700;
+    color: #4293d4;
+}
