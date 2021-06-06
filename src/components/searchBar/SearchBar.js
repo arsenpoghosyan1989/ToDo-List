@@ -3,7 +3,7 @@ import style from "./SearchBar.css";
 
 export default class SearchBar extends Component {
   render() {
-    let { search, filter, searchValue, filterValue } = this.props;
+    const { search, filter, searchValue, filterValue } = this.props;
     const onSearchChange = (e) => {
       let value = e.target.value;
       searchValue(value);
@@ -11,7 +11,7 @@ export default class SearchBar extends Component {
     const onFilterChange = (value) => {
       filterValue(value);
     };
-    let clazz = filter;
+
     return (
       <div className="row searchBar" style={style}>
         <input
@@ -22,7 +22,7 @@ export default class SearchBar extends Component {
         />
         <div className="btn-group">
           <div
-            className={`btn ${clazz === 'all' ? 'btn-primary' : 'btn-secondary'} form-control`}
+            className={`btn ${filter === 'all' ? 'btn-primary' : 'btn-secondary'} form-control`}
             onClick={() => {
               onFilterChange("all");
             }}
@@ -30,7 +30,7 @@ export default class SearchBar extends Component {
             All
           </div>
           <div
-            className={`btn ${clazz === 'active' ? 'btn-primary' : 'btn-secondary'} form-control`}
+            className={`btn ${filter === 'active' ? 'btn-primary' : 'btn-secondary'} form-control`}
             onClick={() => {
               onFilterChange("active");
             }}
@@ -38,7 +38,7 @@ export default class SearchBar extends Component {
             Active
           </div>
           <div
-            className={`btn ${clazz === 'done' ? 'btn-primary' : 'btn-secondary'} form-control`}
+            className={`btn ${filter === 'done' ? 'btn-primary' : 'btn-secondary'} form-control`}
             onClick={() => {
               onFilterChange("done");
             }}

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Title from "../title/Title";
-import SearchBar from "../searchBar/SearchBar";
-import TodoList from "../toDoList/TodoList";
-import AddTodo from "../addTodo/AddTodo";
+import Title from "./components/title/Title";
+import SearchBar from "./components/searchBar/SearchBar";
+import TodoList from "./components/toDoList/TodoList";
+import AddTodo from "./components/addTodo/AddTodo";
 import style from "./App.css";
 
 export default class App extends Component {
